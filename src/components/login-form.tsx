@@ -126,6 +126,18 @@ export default function LoginForm() {
               ))}
             </div>
           </div>
+
+          <a
+            href="https://github.com/MZF/warehouse-stock-management-system"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-ghost mt-4 w-full justify-center"
+          >
+            ⬇ Download Source Code (Open Source)
+          </a>
+          <p className="mt-2 text-center text-[11px] text-slate-400">
+            Dibuka oleh <span className="font-semibold text-slate-500">MZF — 2026</span>
+          </p>
         </div>
       </section>
     </main>

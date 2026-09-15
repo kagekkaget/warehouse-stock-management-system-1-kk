@@ -144,7 +144,15 @@ export default function AppShell({
         <main className="mx-auto w-full max-w-7xl flex-1 space-y-5 px-4 py-6 lg:px-6">{children}</main>
         <footer className="border-t border-slate-200 bg-white/60 px-4 py-3 text-center text-[11px] text-slate-500 lg:px-6">
           StokPintar © {new Date().getFullYear()} · Data pelanggan diproses sesuai UU No. 27/2022 (PDP) · Cadangan
-          otomatis tersedia melalui menu Pengaturan
+          otomatis tersedia melalui menu Pengaturan ·{" "}
+          <a
+            href="https://github.com/MZF"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-teal-700 hover:underline"
+          >
+            Open Source · MZF — 2026
+          </a>
         </footer>
       </div>
       <Toasts />
