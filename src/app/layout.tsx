@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
+import TrakteerProvider from "@/components/trakteer-provider";
 
 export const metadata: Metadata = {
   title: "StokPintar — Sistem Laporan Stok Gudang",
@@ -20,7 +21,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="id">
-      <body className="min-h-screen text-slate-900 antialiased">{children}</body>
+      <body className="min-h-screen text-slate-900 antialiased">
+        <TrakteerProvider>{children}</TrakteerProvider>
+      </body>
     </html>
   );
 }
